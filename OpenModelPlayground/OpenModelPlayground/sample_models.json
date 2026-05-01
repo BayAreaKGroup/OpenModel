@@ -1,0 +1,28 @@
+[
+  {
+    "id": "TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF",
+    "name": "TinyLlama 1.1B Chat",
+    "description": "Small instruction model for quick local test.",
+    "provider": "TheBloke",
+    "license": "Apache-2.0",
+    "sizeBytes": 0,
+    "runtime": "gguf",
+    "modalities": ["text"],
+    "downloadURLString": "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+    "fileName": "tinyllama-1.1b-chat-v1.0.gguf",
+    "sha256": null
+  },
+  {
+    "id": "HuggingFaceH4/zephyr-7b-beta-GGUF",
+    "name": "Zephyr 7B Beta",
+    "description": "Instruction model for Q&A and summarization.",
+    "provider": "HuggingFaceH4",
+    "license": "Apache-2.0",
+    "sizeBytes": 0,
+    "runtime": "gguf",
+    "modalities": ["text"],
+    "downloadURLString": "https://huggingface.co/TheBloke/zephyr-7b-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf",
+    "fileName": "zephyr-7b-beta.gguf",
+    "sha256": null
+  }
+]
