@@ -1,0 +1,18 @@
+FROM lmsysorg/sglang:latest-cu129
+
+ENV PYTHONUNBUFFERED=1
+
+ENV SGLANG_MODEL=Qwen/Qwen2.5-3B-Instruct
+ENV SGLANG_HOST=0.0.0.0
+ENV SGLANG_PORT=30000
+ENV SGLANG_TP=1
+
+WORKDIR /app
+
+EXPOSE 30000
+
+CMD ["sh", "-lc", "python3 -m sglang.launch_server \
+  --model-path ${SGLANG_MODEL} \
+  --host ${SGLANG_HOST} \
+  --port ${SGLANG_PORT} \
+  --tp ${SGLANG_TP}"]
