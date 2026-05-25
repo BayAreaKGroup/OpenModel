@@ -1,6 +1,9 @@
-FROM lmsysorg/sglang:latest-cu129
+FROM lmsysorg/sglang:latest-runtime
 
 ENV PYTHONUNBUFFERED=1
+ENV FLASHINFER_USE_CUDA_NORM=1
+
+RUN python3 -m pip install --no-cache-dir distro
 
 ENV SGLANG_MODEL=Qwen/Qwen2.5-3B-Instruct
 ENV SGLANG_HOST=0.0.0.0
