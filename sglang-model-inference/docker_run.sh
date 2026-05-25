@@ -24,6 +24,7 @@ COMMON_ARGS=(
   -e SGLANG_PORT=30000
   -e SGLANG_MODEL="$MODEL"
   -e SGLANG_TP="$TP"
+  -e FLASHINFER_USE_CUDA_NORM=1
 )
 
 if [ "$MODE" = "fast" ]; then
